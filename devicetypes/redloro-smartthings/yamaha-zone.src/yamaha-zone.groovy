@@ -77,28 +77,28 @@ metadata {
 
     // row
     standardTile("0", "device.source0", decoration: "flat", width: 2, height: 2) {
-      state("off", label:"AV1", action:"source0", icon:"https://raw.githubusercontent.com/redloro/smartthings/master/images/indicator-dot-gray.png", backgroundColor:"#ffffff")
-      state("on", label:"AV1", action:"source0", icon:"https://raw.githubusercontent.com/redloro/smartthings/master/images/indicator-dot-green.png", backgroundColor:"#ffffff")
+      state("off", label:"PS3", action:"source0", icon:"https://raw.githubusercontent.com/redloro/smartthings/master/images/indicator-dot-gray.png", backgroundColor:"#ffffff")
+      state("on", label:"PS3", action:"source0", icon:"https://raw.githubusercontent.com/redloro/smartthings/master/images/indicator-dot-green.png", backgroundColor:"#ffffff")
     }
     standardTile("1", "device.source1", decoration: "flat", width: 2, height: 2) {
-      state("off", label:"AV2", action:"source1", icon:"https://raw.githubusercontent.com/redloro/smartthings/master/images/indicator-dot-gray.png", backgroundColor:"#ffffff")
-      state("on", label:"AV2", action:"source1", icon:"https://raw.githubusercontent.com/redloro/smartthings/master/images/indicator-dot-green.png", backgroundColor:"#ffffff")
+      state("off", label:"NET RADIO", action:"source1", icon:"https://raw.githubusercontent.com/redloro/smartthings/master/images/indicator-dot-gray.png", backgroundColor:"#ffffff")
+      state("on", label:"NET RADIO", action:"source1", icon:"https://raw.githubusercontent.com/redloro/smartthings/master/images/indicator-dot-green.png", backgroundColor:"#ffffff")
     }
     standardTile("2", "device.source2", decoration: "flat", width: 2, height: 2) {
-      state("off", label:"AV3", action:"source2", icon:"https://raw.githubusercontent.com/redloro/smartthings/master/images/indicator-dot-gray.png", backgroundColor:"#ffffff")
-      state("on", label:"AV3", action:"source2", icon:"https://raw.githubusercontent.com/redloro/smartthings/master/images/indicator-dot-green.png", backgroundColor:"#ffffff")
+      state("off", label:"CC", action:"source2", icon:"https://raw.githubusercontent.com/redloro/smartthings/master/images/indicator-dot-gray.png", backgroundColor:"#ffffff")
+      state("on", label:"CC", action:"source2", icon:"https://raw.githubusercontent.com/redloro/smartthings/master/images/indicator-dot-green.png", backgroundColor:"#ffffff")
     }
     standardTile("3", "device.source3", decoration: "flat", width: 2, height: 2) {
-      state("off", label:"AV4", action:"source3", icon:"https://raw.githubusercontent.com/redloro/smartthings/master/images/indicator-dot-gray.png", backgroundColor:"#ffffff")
-      state("on", label:"AV4", action:"source3", icon:"https://raw.githubusercontent.com/redloro/smartthings/master/images/indicator-dot-green.png", backgroundColor:"#ffffff")
+      state("off", label:"FM", action:"source3", icon:"https://raw.githubusercontent.com/redloro/smartthings/master/images/indicator-dot-gray.png", backgroundColor:"#ffffff")
+      state("on", label:"FM", action:"source3", icon:"https://raw.githubusercontent.com/redloro/smartthings/master/images/indicator-dot-green.png", backgroundColor:"#ffffff")
     }
     standardTile("4", "device.source4", decoration: "flat", width: 2, height: 2) {
-      state("off", label:"AV5", action:"source4", icon:"https://raw.githubusercontent.com/redloro/smartthings/master/images/indicator-dot-gray.png", backgroundColor:"#ffffff")
-      state("on", label:"AV5", action:"source4", icon:"https://raw.githubusercontent.com/redloro/smartthings/master/images/indicator-dot-green.png", backgroundColor:"#ffffff")
+      state("off", label:"Pandora", action:"source4", icon:"https://raw.githubusercontent.com/redloro/smartthings/master/images/indicator-dot-gray.png", backgroundColor:"#ffffff")
+      state("on", label:"Pandora", action:"source4", icon:"https://raw.githubusercontent.com/redloro/smartthings/master/images/indicator-dot-green.png", backgroundColor:"#ffffff")
     }
     standardTile("5", "device.source5", decoration: "flat", width: 2, height: 2) {
-      state("off", label:"AV6", action:"source5", icon:"https://raw.githubusercontent.com/redloro/smartthings/master/images/indicator-dot-gray.png", backgroundColor:"#ffffff")
-      state("on", label:"AV6", action:"source5", icon:"https://raw.githubusercontent.com/redloro/smartthings/master/images/indicator-dot-green.png", backgroundColor:"#ffffff")
+      state("off", label:"AV1", action:"source5", icon:"https://raw.githubusercontent.com/redloro/smartthings/master/images/indicator-dot-gray.png", backgroundColor:"#ffffff")
+      state("on", label:"AV1", action:"source5", icon:"https://raw.githubusercontent.com/redloro/smartthings/master/images/indicator-dot-green.png", backgroundColor:"#ffffff")
     }
 
     // row
@@ -127,12 +127,12 @@ metadata {
   }
 
   preferences {
-    input name: "source0", type: "text", title: "Source 1", defaultValue: "AV1"
-    input name: "source1", type: "text", title: "Source 2", defaultValue: "AV2"
-    input name: "source2", type: "text", title: "Source 3", defaultValue: "AV3"
-    input name: "source3", type: "text", title: "Source 4", defaultValue: "AV4"
-    input name: "source4", type: "text", title: "Source 5", defaultValue: "AV5"
-    input name: "source5", type: "text", title: "Source 6", defaultValue: "AV6"
+    input name: "source0", type: "text", title: "PS3", defaultValue: "HDMI1"
+    input name: "source1", type: "text", title: "N-RADIO", defaultValue: "NET RADIO"
+    input name: "source2", type: "text", title: "Cr-cast", defaultValue: "HDMI3"
+    input name: "source3", type: "text", title: "FM", defaultValue: "TUNER"
+    input name: "source4", type: "text", title: "Pandora", defaultValue: "Pandora"
+    input name: "source5", type: "text", title: "AV1", defaultValue: "AV1"
   }
 }
 
